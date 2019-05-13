@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Maio-2019 às 02:54
+-- Generation Time: 14-Maio-2019 às 01:26
 -- Versão do servidor: 10.1.38-MariaDB
 -- versão do PHP: 7.3.4
 
@@ -21,6 +21,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `ren-chon_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `friendship`
+--
+
+CREATE TABLE `friendship` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `friend_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `friendship`
+--
+
+INSERT INTO `friendship` (`id`, `user_id`, `friend_id`) VALUES
+(5, 1, 2),
+(6, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -48,6 +68,14 @@ INSERT INTO `user_info` (`id`, `user`, `password`, `email`) VALUES
 --
 
 --
+-- Indexes for table `friendship`
+--
+ALTER TABLE `friendship`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `friend_id` (`friend_id`);
+
+--
 -- Indexes for table `user_info`
 --
 ALTER TABLE `user_info`
@@ -59,10 +87,27 @@ ALTER TABLE `user_info`
 --
 
 --
+-- AUTO_INCREMENT for table `friendship`
+--
+ALTER TABLE `friendship`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `friendship`
+--
+ALTER TABLE `friendship`
+  ADD CONSTRAINT `friendship_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_info` (`id`),
+  ADD CONSTRAINT `friendship_ibfk_2` FOREIGN KEY (`friend_id`) REFERENCES `user_info` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
