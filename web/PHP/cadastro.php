@@ -51,29 +51,52 @@
 
 
 ?>
-
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Cadastro</title>
-			<meta charset="utf-8">
 
-		</head>
-		<body>
+<html>
 
-			<h1>Crie sua conta agora!!</h1>
+	<head>
+		<title>TITLE</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../CSS/login-style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</head>
+
+
+	<body>
+
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="welcome.php"><img src="https://33.media.tumblr.com/5dc4d066766ace675599ee469422390c/tumblr_mwix7neuTm1s21xzoo3_400.gif"> Ren-Chon Network </a>
+		</nav>
+
+			<div class="login-sidebar">
+				<div class="login-form">
+					<h2>New Account:</h2>
+					<br>
+					<form method="POST">
+						<div class="form-group">
+							<label for="user">Digite seu usuário:</label>
+							<input type="text" id="user" name="usuario" placeholder="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="password">Digite sua senha:</label>
+							<input type="password" id="password" name="senha" placeholder="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="confirmPassword">Confime sua senha:</label>
+							<input type="password" id="confirmPassword" name="confirmeSenha" placeholder="" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="email">Digite seu email:</label>
+							<input type="email" id="email" name="email" placeholder="" class="form-control">
+						</div>
+						<button type="submit" class="btn btn-dark">Submit</button>
+					</form>
+				</div>
+			</div>
 			
-			<form method="POST">
-				<label>Digite seu usuário:</label><br>
-				<input type="text" name="usuario"><br><br>
-				<label>Digite sua senha:</label><br>
-				<input type="password" name="senha"><br><br>
-				<label>Confime sua senha:</label><br>
-				<input type="password" name="confirmeSenha"><br><br>
-				<label>Digite seu email:</label><br>
-				<input type="email" name="email"><br><br>
-				<input type="submit" value="Salvar">
-			</form>
-		
-		</body>
-	</html>
+	</body>
+</html>

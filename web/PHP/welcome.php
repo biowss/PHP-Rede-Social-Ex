@@ -1,3 +1,4 @@
+
 <?php 
 
 	error_reporting(1);
@@ -6,7 +7,7 @@
 	if($_POST != NULL){
 
 		include_once "connect_db.php";
-		
+
 		$usuario = $_POST["usuario"];
 		$senha = $_POST["senha"];
 
@@ -54,8 +55,6 @@
 
 ?>
 
-
-
 <!DOCTYPE html>
 
 <html>
@@ -71,36 +70,29 @@
 	</head>
 
 
-
-
-
 	<body>
 
 	<nav class="navbar navbar-expand-lg">
-	  <a class="navbar-brand" href="#"><img src="https://pm1.narvii.com/6274/91e724ccdf21f9002929ae41d560fdcc09a0d3bc_hq.jpg"> Ren-Chon Network </a>
+	  <a class="navbar-brand" href="welcome.php"><img src="https://33.media.tumblr.com/5dc4d066766ace675599ee469422390c/tumblr_mwix7neuTm1s21xzoo3_400.gif"> Ren-Chon Network </a>
 	</nav>
 
 	<div class="login-sidebar">
 		<div class="login-form">
-            <form method="POST">
-            	<div class="form-group">
-            		<label for="user">User:</label>
-			  		<input type="text" id="user" name="usuario" placeholder="usuario" class="form-control">
-			  	</div>
-			  	<div class="form-group">
-			  		<label for="password">Password:</label>
-			  		<input type="password" id="password" name="senha" placeholder="senha" class="form-control">
-			  	</div>
-			  	<button type="submit" class="btn btn-primary">Login</button>
+      <form method="POST">
+				<div class="form-group">
+							<label for="user">User:</label>
+					<input type="text" id="user" name="usuario" placeholder="" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="senha" placeholder="" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-dark">Login</button>
 			</form>
-
-			<br>
-            
-            <a href="cadastro.php">Cadastrar</a> 
-            
-            <br>
-            
-            <a href="">Esqueceu a senha?</a>
+			<br>            
+			<a href="cadastro.php">Cadastrar</a> 			
+			<br>			
+			<a href="">Esqueceu a senha?</a>
 		</div>
 	</div>
 

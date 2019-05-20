@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
+body{
+	padding: 0;
+    margin: 0;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/27e8d40b-71c2-45ea-82f9-e020bad58d0c/d8l4znn-adffe6e1-8506-4599-b5ab-9670cc7faf57.png/v1/fill/w_1192,h_670,q_70,strp/renge_miyauchi__non_non_biyori__by_ncoll36_d8l4znn-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcLzI3ZThkNDBiLTcxYzItNDVlYS04MmY5LWUwMjBiYWQ1OGQwY1wvZDhsNHpubi1hZGZmZTZlMS04NTA2LTQ1OTktYjVhYi05NjcwY2M3ZmFmNTcucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6jCCmIAe1uu0c7Th61NnNNbCViSKXfX_iFBywErAHNc");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+.container{
+    margin: 0 10% 0 10% !important;
+}
+
+.navbar{
+	background-color: hsla(302, 59%, 84%, 0.9);
+	padding: 0 5px 0 5px !important;
+    margin: 0!important;
+}
+
+.navbar-brand{
+	font-family: 'Fugaz One', cursive;
+	color: black;
+	font-size: 25px !important;
+}
+nav a img{
+	height: 9vh;
+}
+
+.nav-button{
+        line-height: 7vh;
+        font-size: 14px !important;
+        background-color: #bd8dbf75 !important;
+        padding: 0 15px 0 15px !important;
+        color: #ffffff !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+        height: 9.5vh;
+        margin-left: 2px;
+}
+
+.nav-button a{
+    color: white;
+}
+
+nav a:hover{
+    color: #843742;
+}
+
+.profileSide{
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    text-align: center !important;
+    z-index: 10;
+}
+.page{
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+    padding-left: 20%;
+    margin: auto;
+}
+
+.border-custom{
+    background-color: rgba(237, 216, 255, 0.5);
+    border: 2px solid rgb(156, 148, 189);
+    border-radius: 15px;
+    margin: 3px;
+    padding: 15px;
+}
+
+.profiles{
+    display: inline-block;
+    flex-flow: inherit;
+    padding: 10px;
+}
+
+.profiles-display3{
+    column-count: 3;
+}
+
+.profiles-display6{
+    column-count: 6 !important;
+    text-align: center;
+}
+
+.profileSide a{
+    text-decoration: none;
+    color: black;
+}
+
+.profileSide a:hover{
+    color: #843742;
+    text-decoration: none;
+}
+
+
+.page a{
+    text-decoration: none;
+    color: black;
+}
+
+.page a:hover{
+    color: #843742;
+    text-decoration: none;
+}
+
+

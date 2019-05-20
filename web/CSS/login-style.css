@@ -2,14 +2,14 @@
 body{
 	background-image: url("https://pbs.twimg.com/media/CpC1N0pUsAA6lLy.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 110vw;
+    background-attachment: fixed;
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
 }
 
 .navbar{
-	background-color: rgb(255,182,193, 0.9);
+	background-color: hsla(302, 59%, 84%, 0.9);
 	padding: 0 5px 0 5px !important;
 	margin: 0!important;
 }
@@ -20,15 +20,15 @@ body{
 	font-size: 25px !important;
 }
 nav a img{
-	height: 8vh;
+	height: 9vh;
 }
 			
 .login-sidebar{
 	display: grid;
 	margin: 0 0 0 4%;
 	width: 25%;
-	height: 88vh;
-	background-color: rgb(255,182,193, 0.9);
+	height: 87vh;
+	background-color: rgb(237, 216, 255,0.9);
 }
 
 .login-form{
@@ -37,8 +37,25 @@ nav a img{
 	font-weight: normal;
 }
 footer{
-	background-color: rgb(255,182,193, 0.9);
+	background-color: hsla(302, 59%, 84%, 0.9);
 	height: 3vh;
 	font-weight: bold;
 	text-align: center;
+}
+
+label{
+	font-family: 'Fugaz One', cursive;
+}
+
+h2{
+	font-family: 'Fugaz One', cursive;
+}
+
+.border-custom{
+    background-color: rgba(237, 216, 255, 0.5);
+    border: 3px solid rgb(156, 148, 189);
+    border-radius: 15px;
+	padding: 10px;
+	padding-left: 10vh !important;
+	margin-top: 10vh;
 }

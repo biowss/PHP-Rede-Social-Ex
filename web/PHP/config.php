@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Rede da Ren-Chon</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
+<?php include_once "nav.php"; ?>
+
 		<div class="container">
 			
 			<h1>Configurações</h1>
