@@ -1,3 +1,4 @@
+<!-- CONEXÃO COM BANCO DE DADOS -->
 <?php
 
 // Conecta ao BD

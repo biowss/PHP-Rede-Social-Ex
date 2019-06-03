@@ -1,3 +1,18 @@
+<!-- NAVBAR QUE INTEGRA TODAS AS PAGINAS MENOS WELCOME QUE TEM NAVBAR PROPRIA -->
+<?php
+
+// Inicializa a sessão
+session_start();
+
+// Não está logado?
+if ($_SESSION["logado"] != "ok") {
+
+  // Volta para o login
+ 	header("Location: index.php");
+
+}
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -29,12 +44,12 @@
 						<a class="nav-link" href="config.php">Configs</a>
 					</li>
 					<li class="nav-item nav-button">
-						<a class="nav-link" href="welcome.php">Exit</a>
+						<a class="nav-link" href="exit.php">Exit</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+				<form method="GET" class="form-inline my-2 my-lg-0" action="procura.php">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" required>
+					<button class="btn btn-outline-light my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 				</form>
 		</nav>
 

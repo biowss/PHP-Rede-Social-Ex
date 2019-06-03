@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Oxygen|Slabo+27px&display=swap');
 
 body{
 	padding: 0;
@@ -8,6 +9,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
     
+}
+
+.font-style{
+	font-family: 'Fugaz One', cursive !important;
 }
 
 
@@ -24,7 +29,7 @@ body{
 .navbar-brand{
 	font-family: 'Fugaz One', cursive;
 	color: black;
-	font-size: 25px !important;
+	font-size: 23px !important;
 }
 nav a img{
 	height: 9vh;
@@ -73,19 +78,52 @@ nav a:hover{
     padding: 15px;
 }
 
-.profiles{
-    display: inline-block;
-    flex-flow: inherit;
-    padding: 10px;
+.border-custom2{
+    border: 3px solid rgb(156, 148, 189) !important;
+    border-radius: 15px !important;
+	padding: 10px;
+	padding-left: 10vh !important;
+    margin-top: 1vh !important;
+    margin-bottom: 1vh !important;
+}
+
+.post-custom{
+    border: 2px solid rgb(156, 148, 189);
+    border-radius: 10px;
+    margin: 3px;
+    padding: 15px;
+}
+
+legend{
+    width: inherit !important;
+    padding: 0 10px 0 10px !important;
+}
+
+.photo{
+    height: 250px;    
+    line-height: 160px;
+    padding: 0;
+}
+
+.photo-search{
+    height: 250px;    
+    text-align: center;
+    
 }
 
 .profiles-display3{
-    column-count: 3;
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px;
+    min-width: 100%;
+    justify-content: space-around;
 }
 
 .profiles-display6{
-    column-count: 6 !important;
+    column-count: 5 !important;
     text-align: center;
+    display: inline-block;
+    padding: 10px;
 }
 
 .profileSide a{
@@ -109,4 +147,16 @@ nav a:hover{
     text-decoration: none;
 }
 
-
+.post-title{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.post-body{
+    font: 18px arial, sans-serif;
+}
+.post-bottom{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}

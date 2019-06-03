@@ -2,10 +2,16 @@
 body{
 	background-image: url("https://pbs.twimg.com/media/CpC1N0pUsAA6lLy.jpg");
 	background-repeat: no-repeat;
-	background-size: 110vw;
-    background-attachment: fixed;
+	background-attachment: fixed;
+	background-position: center;
+	/*
+	background-size: auto 100%;
+	background-color: #efc0e2 !important;
+	*/
+	background-size: cover;
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
 }
 
 .navbar{
@@ -27,7 +33,7 @@ nav a img{
 	display: grid;
 	margin: 0 0 0 4%;
 	width: 25%;
-	height: 87vh;
+	height: 86vh;
 	background-color: rgb(237, 216, 255,0.9);
 }
 
@@ -38,7 +44,7 @@ nav a img{
 }
 footer{
 	background-color: hsla(302, 59%, 84%, 0.9);
-	height: 3vh;
+	height: 4vh;
 	font-weight: bold;
 	text-align: center;
 }
